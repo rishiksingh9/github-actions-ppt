@@ -8,7 +8,7 @@ on:
         required: true
 
 jobs:
-  say_hello:
+  say_hello_fromAction:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
