@@ -11,4 +11,4 @@ jobs:
       - uses: actions/checkout@v3
       - run: cat ./.github/workflows/list.txt
         name: I display the contents of list.txt
-      - run: echo "I am step 4!
+      - run: echo "I am step 4!"
