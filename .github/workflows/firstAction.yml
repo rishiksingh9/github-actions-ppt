@@ -1,0 +1,17 @@
+name: First Action
+on:
+  workflow_dispatch:
+    inputs:
+      thename:
+        description: "Who should we greet?"
+        type: string
+        required: true
+
+jobs:
+  say_hello:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: ./.github/actions/greet-user
+        with:
+          who_to_greet: ${{ inputs.thename }}
