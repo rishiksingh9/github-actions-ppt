@@ -1,4 +1,4 @@
-name: Welcome a user, but let them know when via outputs
+name: Output
 on:
   workflow_dispatch:
     inputs:
